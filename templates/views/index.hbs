@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <title>Weather app</title>
+    <link rel="icon" href="/assets/ico.png">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather</p>
+
+        <form>
+            <label for='weatherInput'>Location</label>
+            <input id='weatherInput'/>
+            <button>Search</button>
+        </form>
+
+        <p id='processing-message'>
+            
+        </p>
+        <p id='success-message'>
+
+        </p>
+
+    </div>
+    
+    {{>footer}}
+    <script src='/js/app.js'></script>
+</body>
+
+</html>
