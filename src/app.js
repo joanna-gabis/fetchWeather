@@ -68,15 +68,10 @@ app.get('/products', (req, res) => {
             error: 'please provide a search string'
         })
     }
-    console.log(req.query)
     res.send({
         products: []
     })
 })
-
-
-
-
 
 
 app.get('/help/*', (req, res) => {
